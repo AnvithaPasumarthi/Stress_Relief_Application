@@ -1,0 +1,177 @@
+.AllIconsDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.navContainer,
+.Jokedisplay,
+.dictionarydisplay,
+.AdviceDisplay,
+.QuotesDisplay,
+.NewsDisplay,
+.musicDisplay,
+.EventsTable {
+  margin-top: 2em;
+  border-radius: 1em;
+  border: groove;
+  border-color: black;
+  padding: 1em;
+  margin-right: 5%;
+  margin-left: 5%;
+  box-shadow: 1px 2px 20px 7px #888;
+  opacity: 0.85;
+}
+.dictionaryWord {
+  color: black;
+  font-size: 3em;
+  font-weight: bolder;
+  padding-left: 2%;
+}
+.dictionaryDefinition {
+  color: rgb(43, 42, 42);
+  font-size: 2em;
+  padding-left: 2%;
+}
+.dictionaryPronunciation {
+  color: rgb(85, 79, 79);
+  padding-left: 2%;
+  padding-top: 1%;
+}
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
+
+.advice,
+.Quote,
+.Jokedisplay {
+  font-size: 2em;
+  font: bold "Signika", sans-serif;
+  user-select: none;
+}
+
+.advice span,
+.Quote div {
+  display: inline-block;
+  animation: bounce 0.6s;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: none;
+  }
+  33% {
+    transform: translateY(-1px) rotate(-2deg);
+  }
+  66% {
+    transform: translateY(1px) rotate(2deg);
+  }
+}
+.advice:hover span {
+  animation: float 0.2s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: rotateX(20deg) translateY(2px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(3deg) scale(1.1);
+  }
+}
+
+.Newstitle {
+  font-size: x-large;
+}
+.Newsdescription {
+  font-size: small;
+}
+
+.GIFimageDisplay {
+  margin-top: 2em;
+  border-radius: 1em;
+  border: groove;
+  border-color: rgb(4, 131, 131);
+  padding: 1em;
+  margin-left: 40%;
+  box-shadow: 1px 2px 20px 7px #888;
+  opacity: 0.85;
+}
+table {
+  font-size: 16px;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  border: 1px solid rgba(15, 14, 14, 0.867);
+  width: 40%;
+  overflow-x: auto;
+}
+
+thead tr {
+  background-color: teal;
+  color: white;
+  text-align: center;
+}
+thead th {
+  padding: 12px 15px;
+}
+tr,
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(185, 179, 179, 0.867);
+}
+tbody tr:hover {
+  background-color: rgba(0, 128, 128, 0.1);
+}
+.pieChart,
+.EventsTable {
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+.displayEachIconContainer:hover {
+  transform: scale(1.5);
+}
+.displayEachIconContainer {
+  align-items: center;
+  padding-top: 1%;
+}
+.quoteauthorname {
+  color: gray;
+  display: flex;
+  justify-content: flex-end;
+  font-size: larger;
+}
+
+q::before,
+q::after {
+  animation: dancing 1s linear infinite;
+  display: inline-block;
+  transform: rotate(13deg);
+}
+
+@keyframes dancing {
+  0% {
+    transform: rotate(13deg) scale(2);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-13deg) scale(2);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(13deg) scale(2);
+  }
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
