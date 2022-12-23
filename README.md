@@ -39,5 +39,6 @@ https://meme-api.herokuapp.com/gimme/1
 
 ### To run the project `npm start`
 
-![Screenshot 2022-12-22 at 5 10 15 PM](https://user-images.githubusercontent.com/91653071/209252108-fe48e551-78de-4fbc-89f0-409820c4d479.png)
+![image](https://user-images.githubusercontent.com/91653071/209252214-1ebc5846-a1d7-4a58-91a6-b35ac7ba926b.png)
+
 
